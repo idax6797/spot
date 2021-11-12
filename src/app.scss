@@ -1,3 +1,9 @@
+@import 'colors';
+@import 'header';
+@import 'content';
+@import 'footer';
+
+
 body {
-    background-color: #000000;
+    background-color: $primary-color;
 }
