@@ -2,7 +2,16 @@
 
 <div class="content">
 
-<p>Hej med dig igenigen</p>
+<h1><?php the_title();?></h1>
+
+<div><?php if (hav_posts()) : while(have_posts()) : the_posts();?>
+    <?php the_content();?>
+<?php endwhile; endif;?>
+</div>
+
+
+
+
 </div>
 
 
