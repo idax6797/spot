@@ -4,6 +4,9 @@ header {
   width: 100%;
   height: 100px;
 }
+header .container-nav {
+  color: blue;
+}
 
 .content {
   min-height: 1000px;

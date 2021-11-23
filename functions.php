@@ -10,3 +10,15 @@ function scripts() {
 
 }
 add_action('wp_enqueue_scripts','scripts');
+
+add_theme_support('menus');
+
+add_theme_support('post-thumbnails');
+
+register_nav_menus(
+
+    array(
+        'main-menu' => __('Main Menu', 'theme'),
+        'secondary-menu' => __('Secondary Menu', 'theme'),
+    )
+    );
