@@ -11,13 +11,20 @@
 <body>
 
 <header>
-    <div class="container-nav">
-        <?php wp_nav_menu(
+    <input id="burger" type="checkbox" />
 
+    <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="menu">
+        <?php wp_nav_menu(
             array(
                 'theme_location' => 'main-menu',
             )
         );?> 
-    </div>      
+    </nav>      
 </header>
     
