@@ -8,23 +8,36 @@
 
     <?php wp_head();?>
 </head>
+
+<img class="background-spot-logo" src="http://localhost:8888/spot/wp-content/uploads/2021/11/background-spot.png" alt="SPOT logo">
+
 <body>
+    <section class="graphics-top">
+        <div class="borders">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="borders-2">
+            <span></span>
+            <span></span>
+        </div>
+    </section>
 
-<header>
-    <input id="burger" type="checkbox" />
+    <header>
+        <input id="burger" type="checkbox" />
 
-    <label for="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-    <nav class="menu">
-        <?php wp_nav_menu(
-            array(
-                'theme_location' => 'main-menu',
-            )
-        );?> 
-    </nav>      
-</header>
+        <nav class="menu">
+            <?php wp_nav_menu(
+                array(
+                    'theme_location' => 'main-menu',
+                )
+            );?> 
+        </nav>      
+    </header>
     

@@ -22,29 +22,81 @@ h2 {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    padding-bottom: 7px;
 }
 
 p {
     font-size: 16px;
     text-align: center;
+    margin-bottom: 14px;
 }
 
-.button {
+.wp-block-button__link {
     background-color: $primary-color;
     border-radius: 5px;
     color: $tertiary-color;
     padding: 10px 45px;
+    margin-top: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
-    line-hight: 14px;
     cursor: pointer;
-  }
 
-.slider {
-    width: 100%;
-    height: 121px;
-    background-color: $secondary-color;
+    &:hover {
+        color: $tertiary-color;
+        box-shadow: 0 0 13px $tertiary-color; 
+    } 
+  }
+  
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container-count {
+
+        margin-bottom: 60px;
+
+        .countdown {
+            width: 100%;
+            text-align: center;
+            font-size: 34px;
+            line-height: 40px;
+            margin-top: 28px;
+            color: $tertiary-color;
+            -webkit-text-stroke: 1px $secondary-color;
+        }
+
+        p:nth-child(2) {
+            display: inline;
+            width: 30px;
+            margin: 0 5px 0 15px;
+            font-size: 10px;
+            text-align: center;
+        }
+        p:nth-child(3) {
+            display: inline;
+            width: 30px;
+            margin: 0 10px 0 20px;
+            font-size: 10px;
+            text-align: center;
+        }
+        p:nth-child(4) {
+            display: inline;
+            width: 30px;
+            margin-left: 15px;
+            font-size: 10px;
+            text-align: center;
+        }
+        p:nth-child(5) {
+            display: inline;
+            width: 30px;
+            margin-left: 20px;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
 }
