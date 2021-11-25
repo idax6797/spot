@@ -1,7 +1,13 @@
 <?php wp_footer();?>
 
 <footer>
-
+    <div id="footer-sidebar" class="footer-spot">
+    <?php
+    if(is_active_sidebar('footer-sidebar')){
+    dynamic_sidebar('footer-sidebar');
+    }
+    ?>
+    </div>
 </footer>
 
 <section class="graphics-bottom">

@@ -13,8 +13,6 @@ add_action('wp_enqueue_scripts','scripts');
 
 add_theme_support('menus');
 
-add_theme_support('post-thumbnails');
-
 register_nav_menus(
 
     array(
@@ -24,6 +22,21 @@ register_nav_menus(
     
 );
 
+add_theme_support('post-thumbnails');
 
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+
+
+add_theme_support('widgets');
+
+
+register_sidebar( array(
+    'name' => 'Footer Sidebar',
+    'id' => 'footer-sidebar',
+    'description' => 'footer',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
