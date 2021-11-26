@@ -32,7 +32,7 @@
             <span></span>
             <span></span>
         </label>
-
+        
         <nav class="menu">
             <?php wp_nav_menu(
                 array(
