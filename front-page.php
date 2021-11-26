@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<div class="content">
+<div class="content front-page">
 
     <img class="spot-festival-logo"src="http://localhost:8888/spot/wp-content/uploads/2021/11/landingpage-spot-logo.png" alt="SPOT festival 2022">
 

@@ -25,7 +25,7 @@ var x = setInterval(function () {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "SPOT festival 2022";
   }
 }, 1000);
 

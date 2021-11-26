@@ -24,7 +24,7 @@ register_nav_menus(
 
 add_theme_support('post-thumbnails');
 
-add_image_size('smallest', 300, 300, true);
+add_image_size('smallest', 300, 90, true);
 add_image_size('largest', 800, 800, true);
 
 
@@ -40,3 +40,5 @@ register_sidebar( array(
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',
 ) );
+
+

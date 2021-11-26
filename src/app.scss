@@ -17,6 +17,11 @@ body {
     margin: 20px;
 }
 
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
 h2 {
     font-size: 20px;
     text-align: center;
@@ -50,7 +55,7 @@ p {
     } 
   }
   
-.content {
+.front-page {
     position: relative;
     display: flex;
     flex-direction: column;
