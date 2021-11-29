@@ -51,6 +51,6 @@ function get_breadcrumb() {
     echo '<a href="'.home_url().'" rel="nofollow">Forside</a>';
     if (is_category() || is_single()) {
         echo '&nbsp;&nbsp;&lt;&nbsp;&nbsp;';
-        the_category(' &bull; ');
+        the_category('  &lt;  ');
     }
 }
