@@ -5,7 +5,7 @@
 
     <h1><?php single_cat_title();?></h1>
     <h2><?php the_archive_description();?></h2>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/iQosI9gM18g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="video-projects" src="https://www.youtube.com/embed/iQosI9gM18g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>SPOT er meget mere end en festival. Se hvilke projekter vi laver resten af året.</p>
       <?php if (have_posts()) : while(have_posts()) : the_post();?>
       

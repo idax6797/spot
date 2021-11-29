@@ -1,3 +1,8 @@
+/*
+ * Inspiration from this
+ * https://www.w3schools.com/howto/howto_js_countdown.asp 
+*/
+
 // Set the date we're counting down to
 var countDownDate = new Date("May 6, 2022 15:37:25").getTime();
 
@@ -26,3 +31,7 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "SPOT festival 2022";
   }
 }, 1000);
+
+
+
+

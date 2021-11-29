@@ -19,7 +19,10 @@
         margin: 16px 0 16px 0;   
     }
 
-
+    .video-projects {
+        width: 412px;
+        height: 315px;
+    }
 
     .blogs {
         width: 300px;
@@ -28,6 +31,7 @@
             border-radius: 5px 5px 0 0;
             margin: 0;
         }
+        
     
         &__content {
             background-color: $background-card;
@@ -151,6 +155,23 @@
         }
 
        
+    }
+    //Read more text on project
+    #more {
+        display: none;
+        background-color: transparent;
+        position: inherit;
+    }
+    
+    #dots {
+        color: $secondary-color;
+        background-color: transparent;
+        position: inherit;
+    }
+    
+    #readmoreBtn {
+        color: $primary-color;
+        cursor: pointer;
     }
     
 }

@@ -13,6 +13,7 @@
 <img class="background-spot-logo" src="http://localhost:8888/spot/wp-content/uploads/2021/11/background-spot.png" alt="SPOT logo">
 
 <body>
+    <div class="breadcrumb"><?php get_breadcrumb(); ?></div>
     <section class="graphics-top">
         <div class="borders">
             <span></span>
@@ -23,8 +24,13 @@
             <span></span>
         </div>
     </section>
-
+    
+ <!--
+ * Inspiration from this
+ * https://codepen.io/termoplus/pen/RRdgZQ 
+ -->
     <header>
+       
         <input id="burger" type="checkbox" />
 
         <label for="burger">

@@ -61,6 +61,10 @@ p {
     flex-direction: column;
     align-items: center;
 
+    .wp-block-embed {
+        margin: 0 -20px 0 -20px;
+    }
+
     .container-count {
 
         margin-bottom: 60px;

@@ -7,6 +7,20 @@
   right: 0;
 }
 
+.breadcrumb {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 40px;
+  
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}
+
 .graphics-top {
   .borders {
       position: absolute;

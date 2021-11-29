@@ -7,6 +7,10 @@
   \********************/
 /***/ (() => {
 
+/*
+ * Inspiration from this
+ * https://www.w3schools.com/howto/howto_js_countdown.asp 
+*/
 // Set the date we're counting down to
 var countDownDate = new Date("May 6, 2022 15:37:25").getTime(); // Update the count down every 1 second
 
