@@ -30,7 +30,7 @@
 .graphics-top .header-spot-logo {
   position: absolute;
   top: 5px;
-  right: 165px;
+  right: 40%;
 }
 .graphics-top .borders {
   position: absolute;
@@ -400,7 +400,7 @@ header input:checked ~ nav ul li {
   transform: scale(1, -1);
   position: absolute;
   bottom: -22px;
-  right: 150px;
+  right: 40%;
 }
 
 /* Register general rules for footer */
