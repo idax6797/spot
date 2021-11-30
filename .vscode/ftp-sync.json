@@ -1,5 +1,5 @@
 {
-    "remotePath": "./spot/wp-content/themes/spot/",
+    "remotePath": "./spot/wp-content/themes/spot",
     "host": "ftp.idahay.dk",
     "username": "idahay.dk",
     "password": "Skf54sxdSkf54sxd",
@@ -16,7 +16,8 @@
     "ignore": [
         "\\.vscode",
         "\\.git",
-        "\\.DS_Store"
+        "\\.DS_Store",
+        "\\.node_modules"
     ],
     "generatedFiles": {
         "extensionsToInclude": [
