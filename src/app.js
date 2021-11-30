@@ -1,9 +1,9 @@
 /*
- * Inspiration from this
+ * Countdown made w. inspiration from this
  * https://www.w3schools.com/howto/howto_js_countdown.asp 
 */
 
-// Set the date we're counting down to
+// Set the date for SPOT festival
 var countDownDate = new Date("May 6, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second
@@ -21,17 +21,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+  // Output the result in an element with id="display-countdown"
+  document.getElementById("display-countdown").innerHTML = days + " : " + hours + " : "
   + minutes + " : " + seconds;
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "SPOT festival 2022";
+    document.getElementById("display-countdown").innerHTML = "SPOT festival 2022";
   }
 }, 1000);
-
-
-
-

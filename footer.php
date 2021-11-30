@@ -1,5 +1,7 @@
+<!--Register content-->
 <?php wp_footer();?>
 
+<!--Register content form wordpress and the sidebar from functions.php-->
 <footer>
     <div id="footer-sidebar" class="footer-spot">
     <?php
@@ -10,6 +12,7 @@
     </div>
 </footer>
 
+<!--Register graphic content-->
 <section class="graphics-bottom">
     <div class="borders">
         <span></span>

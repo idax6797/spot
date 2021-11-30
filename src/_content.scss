@@ -1,9 +1,12 @@
 @import 'colors';
+
+/* Register general rules for the content */
 .content {
     min-height: 1000px;
     width: 100%;
 }
 
+/* Register general rules for the archive site */
 .archive {
     display: flex;
     flex-direction: column;
@@ -68,6 +71,7 @@
         }
     }
 
+    /* Register general rules for the category - SPOT på midten */
     .category-pa-midten {
         background-color: $background-card;
         margin: 0 0 26px 0;
@@ -110,12 +114,11 @@
                 }              
             }
         }
-
-        
     }
 
 }
 
+/* Register general rules for the event sites - project */
 .project {
     display: flex;
     flex-direction: column;
@@ -197,10 +200,9 @@
             margin-top: 150px;
             justify-content: center;
         }
-
-       
     }
-    //Read more text on project
+
+    /* Register rules for the read more function */
     #more {
         display: none;
         background-color: transparent;
@@ -216,6 +218,5 @@
     #readmoreBtn {
         color: $primary-color;
         cursor: pointer;
-    }
-    
+    }   
 }

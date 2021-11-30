@@ -24,14 +24,13 @@
             <span></span>
             <span></span>
         </div>
-    </section>
+    </section>  
     
- <!--
- * Inspiration from this
- * https://codepen.io/termoplus/pen/RRdgZQ 
- -->
+    <!--
+    * Inspiration from this
+    * https://codepen.io/termoplus/pen/RRdgZQ 
+    -->
     <header>
-       
         <input id="burger" type="checkbox" />
 
         <label for="burger">

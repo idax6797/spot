@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@charset "UTF-8";
+/* Import google font - Work Sans*/
+/*Register font family and colors*/
+/* Register rules for background SPOT-logo */
 .background-spot-logo {
   width: 100%;
   height: 286px;
@@ -9,6 +13,7 @@
   right: 0;
 }
 
+/* Register general rules breadcrumbs */
 .breadcrumb {
   position: relative;
   top: 20px;
@@ -21,6 +26,7 @@
   cursor: pointer;
 }
 
+/* Register general rules for the graphics */
 .graphics-top .header-spot-logo {
   position: absolute;
   top: 5px;
@@ -68,6 +74,7 @@
   left: 98px;
 }
 
+/* Register general rules for the header */
 header {
   width: 100%;
   height: 40px;
@@ -157,15 +164,20 @@ header input:checked ~ nav ul li {
   transition-delay: 0.5s;
 }
 
+/* Import google font - Work Sans*/
+/*Register font family and colors*/
+/* Register general rules for the content */
 .content {
   min-height: 1000px;
   width: 100%;
 }
 
+/* Register general rules for the archive site */
 .archive {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Register general rules for the category - SPOT på midten */
 }
 .archive h2 {
   font-size: 20px;
@@ -253,10 +265,12 @@ header input:checked ~ nav ul li {
   left: 230px;
 }
 
+/* Register general rules for the event sites - project */
 .project {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* Register rules for the read more function */
 }
 .project img {
   width: 100vw;
@@ -340,6 +354,7 @@ header input:checked ~ nav ul li {
   cursor: pointer;
 }
 
+/* Register general rules for graphics */
 .graphics-bottom {
   transform: scale(1, -1);
 }
@@ -388,6 +403,7 @@ header input:checked ~ nav ul li {
   right: 150px;
 }
 
+/* Register general rules for footer */
 footer {
   width: 100%;
   height: 300px;
@@ -402,6 +418,7 @@ footer .footer-spot p {
   font-size: 12px;
 }
 
+/* Register general rules */
 * {
   margin: 0;
   padding: 0;
@@ -452,6 +469,7 @@ p {
   box-shadow: 0 0 13px #000000;
 }
 
+/* Register general rules for the front-page */
 .front-page {
   position: relative;
   display: flex;
