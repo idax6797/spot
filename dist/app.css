@@ -21,6 +21,11 @@
   cursor: pointer;
 }
 
+.graphics-top .header-spot-logo {
+  position: absolute;
+  top: 5px;
+  right: 165px;
+}
 .graphics-top .borders {
   position: absolute;
   top: 20px;

@@ -15,6 +15,7 @@
 <body>
     <div class="breadcrumb"><?php get_breadcrumb(); ?></div>
     <section class="graphics-top">
+        <img class="header-spot-logo"src="http://localhost:8888/spot/wp-content/uploads/2021/11/Spot-logo.png" alt="SPOT logo">
         <div class="borders">
             <span></span>
             <span></span>
