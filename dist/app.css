@@ -155,7 +155,7 @@ header input ~ nav ul li a {
   font-size: 25px;
 }
 header input:checked ~ nav {
-  background: linear-gradient(#3E6944, #071008);
+  background: #1D1E21;
   height: 100%;
   transition-delay: 0s;
 }
@@ -188,26 +188,30 @@ header input:checked ~ nav ul li {
   margin: 16px 0 16px 0;
 }
 .archive .video-projects {
-  width: 412px;
-  height: 315px;
+  width: 100%;
+  height: 300px;
 }
 .archive .blogs {
-  width: 300px;
+  width: 100%;
+  height: 200px;
 }
 .archive .blogs img {
   border-radius: 5px 5px 0 0;
   margin: 0;
+  width: 100%;
+  height: 160px;
 }
 .archive .blogs__content {
-  background-color: #3D6843;
+  background-color: #121416;
   display: flex;
   flex-direction: column;
-  margin: 0 0 26px 0;
+  margin: 0 0 24px 0;
   border-radius: 0 0 5px 5px;
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
-  padding: 7px 0 0 5px;
   position: relative;
-  top: -3px;
+  padding: 6px;
+  top: -4px;
+  height: 40px;
 }
 .archive .blogs__content h3 {
   font-size: 10px;
@@ -225,24 +229,28 @@ header input:checked ~ nav ul li {
   font-weight: bold;
   text-decoration: none;
   position: absolute;
-  left: 230px;
+  left: 280px;
+  top: 22px;
 }
 .archive .category-pa-midten {
-  background-color: #3D6843;
-  margin: 0 0 26px 0;
+  background-color: #121416;
+  margin: 0 0 25px 0;
   border-radius: 5px;
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
   position: relative;
+  width: 100%;
+  height: 200px;
 }
 .archive .category-pa-midten img {
+  width: 100%;
+  height: 160px;
   border-radius: 5px 5px 0 0;
-  margin: 0;
 }
 .archive .category-pa-midten .container-category {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5px;
+  padding: 6px;
   height: 40px;
 }
 .archive .category-pa-midten .container-category h3 {
@@ -262,7 +270,7 @@ header input:checked ~ nav ul li {
   font-weight: bold;
   text-decoration: none;
   position: absolute;
-  left: 230px;
+  left: 280px;
 }
 
 /* Register general rules for the event sites - project */
@@ -285,12 +293,12 @@ header input:checked ~ nav ul li {
 .project__info {
   width: 100vw;
   height: 700px;
-  background: linear-gradient(#3E6944, #172A19);
+  background: #1D1E21;
   border-radius: 20px 20px 0 0;
   position: absolute;
   top: 280px;
   left: 0;
-  padding: 35px 20px 20px 20px;
+  padding: 24px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -301,11 +309,11 @@ header input:checked ~ nav ul li {
   background-color: #FFFFFF;
   position: relative;
   left: 45%;
-  top: -25px;
+  top: -12px;
   border-radius: 5px;
 }
 .project__info .facebook-event-api {
-  padding: 20px 0 30px 0;
+  padding: 12px 0 24px 0;
 }
 .project__info p {
   text-align: left;
@@ -313,23 +321,23 @@ header input:checked ~ nav ul li {
   margin: 0;
 }
 .project__info p a {
-  color: #D9B24A;
+  color: #4A4642;
   text-decoration: none;
 }
 .project__info .wp-block-columns {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 40px 0 -40px 0;
+  margin: 24px 0 -40px 0;
 }
 .project__info .wp-block-columns i {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: #D9B24A;
+  color: #FFFFFF;
 }
 .project__info .wp-block-columns p {
-  padding-left: 7px;
+  padding-left: 6px;
 }
 .project__info .wp-block-columns p:nth-child(2) {
   font-weight: bold;
@@ -350,8 +358,9 @@ header input:checked ~ nav ul li {
   position: inherit;
 }
 .project #readmoreBtn {
-  color: #D9B24A;
+  color: #FFFFFF;
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* Register general rules for graphics */
@@ -408,11 +417,15 @@ footer {
   width: 100%;
   height: 300px;
 }
+footer .footer-spot h2 {
+  padding-bottom: 12px;
+}
 footer .footer-spot ul {
   margin-bottom: 40px;
 }
 footer .footer-spot h4 {
   font-size: 12px;
+  padding: 12px 0 12px 0;
 }
 footer .footer-spot p {
   font-size: 12px;
@@ -428,7 +441,7 @@ footer .footer-spot p {
 }
 
 body {
-  background: linear-gradient(#3E6944, #071008);
+  background: #1D1E21;
   margin: 20px;
 }
 
@@ -452,9 +465,9 @@ p {
 }
 
 .wp-block-button__link {
-  background-color: #D9B24A;
+  background-color: #4A4642;
   border-radius: 5px;
-  color: #000000;
+  color: #FFFFFF;
   padding: 10px 45px;
   margin-top: 20px;
   text-align: center;
@@ -465,7 +478,7 @@ p {
   cursor: pointer;
 }
 .wp-block-button__link:hover {
-  color: #000000;
+  color: #FFFFFF;
   box-shadow: 0 0 13px #000000;
 }
 
@@ -479,9 +492,6 @@ p {
 .front-page h1 {
   display: none;
 }
-.front-page .wp-block-embed {
-  margin: 0 -20px 0 -20px;
-}
 .front-page .container-count {
   margin-bottom: 60px;
 }
@@ -491,7 +501,7 @@ p {
   font-size: 34px;
   line-height: 40px;
   margin-top: 28px;
-  color: #3D6843;
+  color: #121416;
   -webkit-text-stroke: 1px #FFFFFF;
 }
 .front-page .container-count p:nth-child(2) {

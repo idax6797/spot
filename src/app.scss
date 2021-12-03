@@ -13,7 +13,7 @@
 }
 
 body {
-    background: linear-gradient(#3E6944, #071008);
+    background: $background-color;
     margin: 20px;
 }
 
@@ -39,7 +39,7 @@ p {
 .wp-block-button__link {
     background-color: $primary-color;
     border-radius: 5px;
-    color: $tertiary-color;
+    color: $secondary-color;
     padding: 10px 45px;
     margin-top: 20px;
     text-align: center;
@@ -50,7 +50,7 @@ p {
     cursor: pointer;
 
     &:hover {
-        color: $tertiary-color;
+        color: $secondary-color;
         box-shadow: 0 0 13px $tertiary-color; 
     } 
   }
@@ -64,10 +64,6 @@ p {
 
     h1 {
         display: none;
-    }
-
-    .wp-block-embed {
-        margin: 0 -20px 0 -20px;
     }
 
     .container-count {
