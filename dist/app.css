@@ -451,11 +451,21 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  width: 100%;
+  font-size: 17px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  color: gray;
 }
 
 p {
@@ -488,19 +498,17 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.front-page h1 {
-  display: none;
+  /* Animation graphic */
 }
 .front-page .container-count {
-  margin-bottom: 60px;
+  margin-bottom: 72px;
 }
 .front-page .container-count .countdown {
   width: 100%;
   text-align: center;
   font-size: 34px;
   line-height: 40px;
-  margin-top: 28px;
+  margin-top: 10px;
   color: #121416;
   -webkit-text-stroke: 1px #FFFFFF;
 }
@@ -531,4 +539,34 @@ p {
   margin-left: 20px;
   font-size: 10px;
   text-align: center;
+}
+.front-page .wp-block-embed {
+  margin-bottom: 0 0 24px;
+}
+.front-page .spot-graphic {
+  transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }

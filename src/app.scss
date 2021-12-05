@@ -23,11 +23,21 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    width: 100%;
+    font-size: 17px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
+}
+
+h4{
+    font-size:14px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    color: darken($secondary-color, 50%);
 }
 
 p {
@@ -62,20 +72,16 @@ p {
     flex-direction: column;
     align-items: center;
 
-    h1 {
-        display: none;
-    }
-
     .container-count {
 
-        margin-bottom: 60px;
+        margin-bottom: 72px;
 
         .countdown {
             width: 100%;
             text-align: center;
             font-size: 34px;
             line-height: 40px;
-            margin-top: 28px;
+            margin-top: 10px;
             color: $background-card;
             -webkit-text-stroke: 1px $secondary-color;
         }
@@ -107,6 +113,31 @@ p {
             margin-left: 20px;
             font-size: 10px;
             text-align: center;
+        }
+    }
+
+    .wp-block-embed {
+        margin-bottom: 0 0 24px ;
+    }
+
+    
+    .spot-graphic {
+        transform: scale(1);
+        animation: pulse 2s infinite;
+    }
+
+    /* Animation graphic */
+    @keyframes pulse {
+        0% {
+            transform: scale(0.90);
+        }
+    
+        50% {
+            transform: scale(1);
+        }
+    
+        100% {
+            transform: scale(0.90);
         }
     }
 }

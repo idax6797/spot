@@ -4,7 +4,7 @@
 */
 
 // Set the date for SPOT festival
-var countDownDate = new Date("May 6, 2022 15:37:25").getTime();
+var countDownDate = new Date("May 6, 2022 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
