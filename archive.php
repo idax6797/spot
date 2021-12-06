@@ -10,7 +10,7 @@ $category_link = get_category_link( $category_id );
 ?>
 
 <!--Register if statement - changes content depending on the category-->
-<?php if ( is_category( 'Projekter' )) : ?>
+<?php if ( is_category( 'Events' )) : ?>
 <div class="content archive">
   <h1><?php single_cat_title();?></h1>
   <h2><?php the_archive_description();?></h2>

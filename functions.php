@@ -28,7 +28,7 @@ register_nav_menus(
  * Register images and size
  */
 add_theme_support('post-thumbnails');
-add_image_size('smallest', 300, 90, true);
+add_image_size('smallest', 335, 160, true);
 add_image_size('largest', 800, 800, true);
 
 /**

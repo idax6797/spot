@@ -179,13 +179,8 @@ header input:checked ~ nav ul li {
   align-items: center;
   /* Register general rules for the category - SPOT på midten */
 }
-.archive h2 {
-  font-size: 20px;
-  text-transform: none;
-  font-weight: 400;
-}
 .archive p {
-  margin: 16px 0 16px 0;
+  margin: 24px 0;
 }
 .archive .video-projects {
   width: 100%;
@@ -271,6 +266,7 @@ header input:checked ~ nav ul li {
   text-decoration: none;
   position: absolute;
   left: 280px;
+  z-index: 2;
 }
 
 /* Register general rules for the event sites - project */
@@ -280,45 +276,37 @@ header input:checked ~ nav ul li {
   align-items: flex-start;
   /* Register rules for the read more function */
 }
-.project img {
-  width: 100vw;
-  height: 325px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 .project__info {
-  width: 100vw;
-  height: 700px;
-  background: #1D1E21;
-  border-radius: 20px 20px 0 0;
-  position: absolute;
-  top: 280px;
-  left: 0;
-  padding: 24px 20px 20px 20px;
+  position: relative;
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.project__info span {
-  width: 40px;
-  height: 2px;
-  background-color: #FFFFFF;
+.project__info .wp-block-embed {
   position: relative;
-  left: 45%;
-  top: -12px;
-  border-radius: 5px;
+  top: -20px;
 }
-.project__info .facebook-event-api {
-  padding: 12px 0 24px 0;
+.project__info h2 {
+  text-align: left;
+  margin: 12px 0 24px 0;
+  padding: 0;
+  top: 335px;
+  position: relative;
+}
+.project__info .wp-block-button {
+  position: absolute;
+  right: 0;
+  top: 365px;
+}
+.project__info .facebook-api {
+  padding: 24px 0 40px 0;
 }
 .project__info p {
   text-align: left;
   font-size: 12px;
   margin: 0;
+  padding-top: 12px;
 }
 .project__info p a {
   color: #4A4642;
@@ -338,14 +326,10 @@ header input:checked ~ nav ul li {
 }
 .project__info .wp-block-columns p {
   padding-left: 6px;
+  padding-top: 0;
 }
 .project__info .wp-block-columns p:nth-child(2) {
   font-weight: bold;
-}
-.project__info .wp-block-buttons {
-  width: 100%;
-  margin-top: 150px;
-  justify-content: center;
 }
 .project #more {
   display: none;
@@ -361,6 +345,7 @@ header input:checked ~ nav ul li {
   color: #FFFFFF;
   cursor: pointer;
   font-weight: bold;
+  padding: 0;
 }
 
 /* Register general rules for graphics */
@@ -417,7 +402,7 @@ footer {
   width: 100%;
   height: 300px;
 }
-footer .footer-spot h2 {
+footer .footer-spot h3 {
   padding-bottom: 12px;
 }
 footer .footer-spot ul {
@@ -468,6 +453,12 @@ h4 {
   color: gray;
 }
 
+h5 {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
 p {
   font-size: 16px;
   text-align: center;
@@ -499,6 +490,10 @@ p {
   flex-direction: column;
   align-items: center;
   /* Animation graphic */
+}
+.front-page .events-text {
+  margin: 24px 0;
+  padding-bottom: 0;
 }
 .front-page .container-count {
   margin-bottom: 72px;
@@ -569,4 +564,24 @@ p {
   100% {
     transform: scale(0.9);
   }
+}
+.front-page .archive .category-pa-midten .container-category__info a {
+  z-index: 2;
+}
+.front-page .archive .category-pa-midten .spm-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+}
+.front-page .blogs .blogs__content a {
+  z-index: 2;
+}
+.front-page .blogs .blogs__content .sus-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
 }

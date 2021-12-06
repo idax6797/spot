@@ -12,14 +12,8 @@
     flex-direction: column;
     align-items: center;
 
-    h2 {
-        font-size: 20px;
-        text-transform: none;
-        font-weight: 400;
-    }
-
     p {
-        margin: 16px 0 16px 0;   
+        margin: 24px 0;   
     }
 
     .video-projects {
@@ -85,7 +79,7 @@
         position: relative;
         width: 100%;
         height: 200px;
-       
+
         img {
             width: 100%;
             height: 160px;
@@ -119,11 +113,11 @@
                     text-decoration: none;
                     position: absolute;
                     left: 280px;
-                }              
+                    z-index: 2;
+                }          
             }
         }
     }
-
 }
 
 /* Register general rules for the event sites - project */
@@ -132,48 +126,41 @@
     flex-direction: column;
     align-items: flex-start;
 
-    img {
-        width: 100vw;
-        height: 325px;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-
     &__info {
-        width: 100vw;
-        height: 700px;
-        background: $background-card-project;
-        border-radius: 20px 20px 0 0;
-        position: absolute;
-        top: 280px;
-        left: 0;
-        padding: 24px 20px 20px 20px;
+        position: relative;
+        height: 650px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
 
-        span {
-            width: 40px;
-            height: 2px;
-            background-color: $secondary-color;
+        .wp-block-embed {
             position: relative;
-            left: 45%;
-            top: -12px;
-            border-radius: 5px;
-           
+            top: -20px;
         }
-        
-        .facebook-event-api {
-            padding: 12px 0 24px 0;
+
+        h2 {
+            text-align: left;
+            margin: 12px 0 24px 0;
+            padding: 0;
+            top: 335px;
+            position: relative;
+        }
+
+        .wp-block-button {
+            position: absolute;
+            right: 0;
+            top: 365px;
+        }
+
+        .facebook-api {
+            padding: 24px 0 40px 0;
         }
 
         p {
             text-align: left;
             font-size: 12px;
             margin: 0;
+            padding-top: 12px;
 
             a {
                 color: $primary-color;
@@ -196,17 +183,12 @@
 
             p {
                 padding-left: 6px;
+                padding-top: 0;
 
                 &:nth-child(2) {
                     font-weight: bold;
                 }
             }
-        }
-
-        .wp-block-buttons {
-            width: 100%;           
-            margin-top: 150px;
-            justify-content: center;
         }
     }
 
@@ -227,5 +209,6 @@
         color: $secondary-color;
         cursor: pointer;
         font-weight: bold;
+        padding: 0;
     }   
 }
