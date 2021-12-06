@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="SPOT er mere end en festival">
+    <meta name="keywords" content="SPOT, SPOT på Midten, SPOT Udenfor sæsonen, Folk SPOT denmark, Musik på hjemmebanen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <title>SPOT</title>
