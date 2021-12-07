@@ -17,7 +17,7 @@ $category_link = get_category_link( $category_id );
   <iframe class="video-projects" src="https://www.youtube.com/embed/iQosI9gM18g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <p>SPOT er meget mere end en festival. Se hvilke projekter vi laver resten af året.</p>
 
-    <div class="category-pa-midten">
+    <div onclick="location.href='<?php echo esc_url( $category_link ); ?>';" class="category-pa-midten">
       <img src="<?php the_post_thumbnail_url('smallest');?>">
       <div class="container-category">
         <h3><?php echo get_cat_name( $category_id = 6 )?></h3>
@@ -30,7 +30,7 @@ $category_link = get_category_link( $category_id );
 
     <?php if (have_posts()) : while(have_posts()) : the_post();?>
 
-      <div class="blogs">
+      <div onclick="location.href='<?php the_permalink()?>';" class="blogs">
           <?php if(has_post_thumbnail()):?>
             <img src="<?php the_post_thumbnail_url('smallest');?>">
           <?php endif;?>
@@ -55,7 +55,7 @@ $category_link = get_category_link( $category_id );
       <iframe class="video-projects" src="https://www.youtube.com/embed/_qmu0SslyvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      <p>SPOT på Midten yay</p>
 
       <?php if (have_posts()) : while(have_posts()) : the_post();?>
-      <div class="blogs">
+      <div onclick="location.href='<?php the_permalink()?>';" class="blogs">
         <?php if(has_post_thumbnail()):?>
           <img src="<?php the_post_thumbnail_url('smallest');?>">
         <?php endif;?>

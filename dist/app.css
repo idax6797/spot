@@ -201,6 +201,7 @@ Version: 1.0
 .archive .blogs {
   width: 100%;
   height: 200px;
+  cursor: pointer;
 }
 .archive .blogs img {
   border-radius: 5px 5px 0 0;
@@ -247,6 +248,7 @@ Version: 1.0
   position: relative;
   width: 100%;
   height: 200px;
+  cursor: pointer;
 }
 .archive .category-pa-midten img {
   width: 100%;
@@ -577,6 +579,9 @@ p {
     transform: scale(0.9);
   }
 }
+.front-page .archive .category-pa-midten {
+  cursor: pointer;
+}
 .front-page .archive .category-pa-midten .container-category__info a {
   z-index: 2;
 }
@@ -586,6 +591,9 @@ p {
   position: absolute;
   bottom: 0;
   right: 22px;
+}
+.front-page .blogs {
+  cursor: pointer;
 }
 .front-page .blogs .blogs__content a {
   z-index: 2;
@@ -597,3 +605,5 @@ p {
   bottom: 0;
   right: 22px;
 }
+
+/* Responsive design */

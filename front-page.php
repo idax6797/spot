@@ -31,7 +31,7 @@
     <!--Register if statement - changes content depending on the category-->
     <h2 class="events-text"><?php echo get_cat_name( $category_id = 4 )?></h2>
     <div class="content archive">
-        <div class="category-pa-midten">
+        <div onclick="location.href='<?php echo esc_url( $category_link ); ?>';" class="category-pa-midten">
         <img src="<?php echo get_the_post_thumbnail_url(45, 'smallest');?>">
             <div class="container-category">
                 <h3><?php echo get_cat_name( $category_id = 6 )?></h3>
@@ -45,7 +45,7 @@
 
         <?php if (have_posts()) : while(have_posts()) : the_post();?>
 
-        <div class="blogs">
+        <div onclick="location.href='<?php echo get_the_permalink(48)?>';" class="blogs">
             <?php if(has_post_thumbnail(48)):?>
                 <img src="<?php echo get_the_post_thumbnail_url(48, 'smallest');?>">
             <?php endif;?>
@@ -64,11 +64,6 @@
         <?php endwhile; endif;?>
     </div>
 </div>
-
-
-
-
-
 
 <!--Register footer-->
 <?php get_footer();?>

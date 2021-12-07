@@ -153,6 +153,8 @@ p {
 
     .archive {
         .category-pa-midten {
+            cursor: pointer;
+
             .container-category__info {
                 a {
                     z-index: 2;
@@ -169,8 +171,9 @@ p {
     }
 
     .blogs {
-        .blogs__content {
+        cursor: pointer;
 
+        .blogs__content {
             a {
                 z-index: 2;
             }
@@ -185,7 +188,7 @@ p {
     }
 }
 
-
+/* Responsive design */
 @media only screen and (min-width:600px) {
     
 }
