@@ -196,12 +196,13 @@ Version: 1.0
 }
 .archive .video-projects {
   width: 100%;
-  height: 300px;
+  height: 189px;
 }
 .archive .blogs {
   width: 100%;
   height: 200px;
   cursor: pointer;
+  margin-top: 24px;
 }
 .archive .blogs img {
   border-radius: 5px 5px 0 0;
@@ -239,6 +240,30 @@ Version: 1.0
   position: absolute;
   left: 280px;
   top: 22px;
+}
+.archive .blogs__content .spm-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+}
+.archive .blogs__content .sus-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+}
+.archive .blogs__content .fsd-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+}
+.archive .musik-pa-hjemmebanen {
+  margin-bottom: 80px;
 }
 .archive .category-pa-midten {
   background-color: #121416;
@@ -282,6 +307,13 @@ Version: 1.0
   left: 280px;
   z-index: 2;
 }
+.archive .category-pa-midten .container-category .spm-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+}
 
 /* Register general rules for the event sites - project */
 .project {
@@ -289,6 +321,13 @@ Version: 1.0
   flex-direction: column;
   align-items: flex-start;
   /* Register rules for the read more function */
+}
+.project figure {
+  height: 189px !important;
+  margin: 0;
+}
+.project figure iframe {
+  height: 100%;
 }
 .project__info {
   position: relative;
@@ -305,16 +344,16 @@ Version: 1.0
   text-align: left;
   margin: 12px 0 24px 0;
   padding: 0;
-  top: 335px;
+  top: 200px;
   position: relative;
 }
 .project__info .wp-block-button {
   position: absolute;
   right: 0;
-  top: 365px;
+  top: 240px;
 }
 .project__info .facebook-api {
-  padding: 24px 0 40px 0;
+  padding-bottom: 40px;
 }
 .project__info p {
   text-align: left;
@@ -416,6 +455,11 @@ footer {
   width: 100%;
   height: 300px;
 }
+footer .footer-spot h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 footer .footer-spot h3 {
   padding-bottom: 12px;
 }
@@ -428,6 +472,14 @@ footer .footer-spot h4 {
 }
 footer .footer-spot p {
   font-size: 12px;
+}
+footer .footer-spot aside ul li {
+  margin: 12px 0 0 10px !important;
+  background-color: transparent !important;
+}
+footer .footer-spot aside ul li svg {
+  width: 25px !important;
+  height: 25px !important;
 }
 
 /* Register general rules */
@@ -549,8 +601,12 @@ p {
   font-size: 10px;
   text-align: center;
 }
-.front-page .wp-block-embed {
-  margin-bottom: 0 0 24px;
+.front-page figure {
+  margin: 0;
+}
+.front-page figure iframe {
+  height: 100%;
+  margin-bottom: 12px;
 }
 .front-page .spot-graphic {
   transform: scale(1);
@@ -599,6 +655,26 @@ p {
   z-index: 2;
 }
 .front-page .blogs .blogs__content .sus-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+}
+.front-page .folk-spot-denmark {
+  margin-top: 25px;
+}
+.front-page .folk-spot-denmark .fsd-spots {
+  width: 98px;
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+}
+.front-page .musik-pa-hjemmebanen {
+  margin-top: 25px;
+}
+.front-page .musik-pa-hjemmebanen .fsd-spots {
   width: 98px;
   height: 53px;
   position: absolute;

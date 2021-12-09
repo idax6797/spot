@@ -126,8 +126,13 @@ p {
         }
     }
 
-    .wp-block-embed {
-        margin-bottom: 0 0 24px ;
+    figure {
+        margin: 0;
+
+        iframe {
+            height: 100%;
+            margin-bottom: 12px;
+        }
     }
 
     
@@ -184,6 +189,30 @@ p {
                 bottom: 0;
                 right: 22px;
             }
+        }
+    }
+
+    .folk-spot-denmark {
+        margin-top: 25px;
+
+        .fsd-spots {
+            width: 98px;
+            height: 53px;
+            position: absolute;
+            bottom: 0;
+            right: 22px;
+        }
+    }
+
+    .musik-pa-hjemmebanen {
+        margin-top: 25px;
+
+        .fsd-spots {
+            width: 98px;
+            height: 53px;
+            position: absolute;
+            bottom: 0;
+            right: 22px;
         }
     }
 }

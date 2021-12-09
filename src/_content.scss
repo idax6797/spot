@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     p {
         margin: 24px 0;   
@@ -18,13 +19,14 @@
 
     .video-projects {
         width: 100%;
-        height: 300px;
+        height: 189px;
     }
 
     .blogs {
         width: 100%;
         height: 200px;
         cursor: pointer;
+        margin-top: 24px;
 
         img {
             border-radius: 5px 5px 0 0;
@@ -68,8 +70,37 @@
                     top: 22px;
                 }
             }
+
+            .spm-spots {
+                width: 98px;
+                height: 53px;
+                position: absolute;
+                bottom: 0;
+                right: 22px;
+            }
+
+            .sus-spots {
+                width: 98px;
+                height: 53px;
+                position: absolute;
+                bottom: 0;
+                right: 22px;
+            }
+
+            .fsd-spots {
+                width: 98px;
+                height: 53px;
+                position: absolute;
+                bottom: 0;
+                right: 22px;
+            }
         }
     }
+
+    .musik-pa-hjemmebanen {
+        margin-bottom: 80px;
+    }
+
 
     /* Register general rules for the category - SPOT på midten */
     .category-pa-midten {
@@ -94,6 +125,7 @@
             justify-content: center;
             padding: 6px;
             height: 40px;
+            
 
             h3 {
                 font-size: 10px;
@@ -118,6 +150,14 @@
                     z-index: 2;
                 }          
             }
+
+            .spm-spots {
+                width: 98px;
+                height: 53px;
+                position: absolute;
+                bottom: 0;
+                right: 22px;
+            }
         }
     }
 }
@@ -127,6 +167,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    figure {
+        height: 189px !important;
+        margin: 0;
+
+        iframe {
+            height: 100%;
+        }
+    }
 
     &__info {
         position: relative;
@@ -144,18 +193,18 @@
             text-align: left;
             margin: 12px 0 24px 0;
             padding: 0;
-            top: 335px;
+            top: 200px;
             position: relative;
         }
 
         .wp-block-button {
             position: absolute;
             right: 0;
-            top: 365px;
+            top: 240px;
         }
 
         .facebook-api {
-            padding: 24px 0 40px 0;
+            padding-bottom: 40px;
         }
 
         p {

@@ -27,8 +27,6 @@
     // Get the URL of this category
     $category_link = get_category_link( $category_id );
     ?>
-
-    <!--Register if statement - changes content depending on the category-->
     <h2 class="events-text"><?php echo get_cat_name( $category_id = 4 )?></h2>
     <div class="content archive">
         <div onclick="location.href='<?php echo esc_url( $category_link ); ?>';" class="category-pa-midten">
@@ -40,12 +38,12 @@
                     <a href="<?php echo esc_url( $category_link ); ?>" title="SPOT på midten">Køb billet</a>
                 </div>
             </div>
-            <img class="spm-spots"src="http://localhost:8888/spot/wp-content/uploads/2021/12/spm-spots.png" alt="SPOT på midten grafik">
+            <img class="spm-spots"src="http://localhost:8888/spot/wp-content/uploads/2021/12/spm-spots.png" alt="SPOT på Midten grafik">
         </div>
 
         <?php if (have_posts()) : while(have_posts()) : the_post();?>
 
-        <div onclick="location.href='<?php echo get_the_permalink(48)?>';" class="blogs">
+        <div class="blogs">
             <?php if(has_post_thumbnail(48)):?>
                 <img src="<?php echo get_the_post_thumbnail_url(48, 'smallest');?>">
             <?php endif;?>
@@ -55,11 +53,44 @@
                 
                 <div class="blog__excerpt">
                 <p><?php echo get_the_excerpt(48)?></p>
-                <a href="<?php echo get_the_permalink(48)?>"> Køb billet </a> 
+                <a href="#"> Køb billet </a> 
                 </div>
                 <img class="sus-spots"src="http://localhost:8888/spot/wp-content/uploads/2021/12/ufs-spots.png" alt="SPOT Udenfor Sæsonen grafik">
             </div>
             </div>
+
+            <div class="blogs folk-spot-denmark">
+            <?php if(has_post_thumbnail(171)):?>
+                <img src="<?php echo get_the_post_thumbnail_url(171, 'smallest');?>">
+            <?php endif;?>
+            
+            <div class="blogs__content">
+                <h3><?php echo get_the_title(171)?></h3>
+                
+                <div class="blog__excerpt">
+                <p><?php echo get_the_excerpt(171)?></p>
+                <a href=#"> Køb billet </a> 
+                </div>
+                <img class="fsd-spots"src="http://localhost:8888/spot/wp-content/uploads/2021/12/fsd-spots.png" alt="Folk SPOT Denmark grafik">
+            </div>
+            </div>
+
+            <div class="blogs musik-pa-hjemmebanen">
+            <?php if(has_post_thumbnail(175)):?>
+                <img src="<?php echo get_the_post_thumbnail_url(175, 'smallest');?>">
+            <?php endif;?>
+            
+            <div class="blogs__content">
+                <h3><?php echo get_the_title(175)?></h3>
+                
+                <div class="blog__excerpt">
+                <p><?php echo get_the_excerpt(175)?></p>
+                <a href="#"> Køb billet </a> 
+                </div>
+                <img class="fsd-spots"src="http://localhost:8888/spot/wp-content/uploads/2021/12/mph-spots.png" alt="Musik på hjemmebanen grafik">
+            </div>
+            </div>
+        </div>
         </div>
         <?php endwhile; endif;?>
     </div>
@@ -67,4 +98,6 @@
 
 <!--Register footer-->
 <?php get_footer();?>
+
+
 
