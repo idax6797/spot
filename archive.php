@@ -13,9 +13,9 @@ $category_link = get_category_link( $category_id );
 <?php if ( is_category( 'Events' )) : ?>
 <div class="content archive">
   <h1><?php single_cat_title();?></h1>
-  <h2><?php the_archive_description();?></h2>
   <iframe class="video-projects" src="https://www.youtube.com/embed/iQosI9gM18g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p>SPOT er meget mere end en festival. Se hvilke projekter vi laver resten af året.</p>
+    <h2><?php the_archive_description();?></h2>
+    <p>Udover SPOT Festival afholder vi en række andre events i løbet af året, heriblandt SPOT på Midten, Udenfor Sæsonen, Folk SPOT og Musik på Hjemmebane.</p>
 
     <div onclick="location.href='<?php echo esc_url( $category_link ); ?>';" class="category-pa-midten">
       <img src="<?php the_post_thumbnail_url('smallest');?>">
@@ -82,9 +82,9 @@ $category_link = get_category_link( $category_id );
   <?php else : ?>
     <div class="content archive">
       <h1><?php single_cat_title();?></h1>
-      <h2><?php the_archive_description();?></h2>
       <iframe class="video-projects" src="https://www.youtube.com/embed/_qmu0SslyvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>SPOT på Midten yay</p>
+        <h2>FIND DIN BY HER</h2>
+        <p>SPOT på Midten sørger for live musik til studievenlige priser. Kom og hør syv nye talenter give et brag af en koncert i din by, hvor du kan tage en ven med til studiepris. Vi præsenterer en bred vifte af genre og artister, og der vil helt sikkert være noget for en hver smag. Find din by her!</p>
 
       <?php if (have_posts()) : while(have_posts()) : the_post();?>
       <div onclick="location.href='<?php the_permalink()?>';" class="blogs">

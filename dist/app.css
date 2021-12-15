@@ -188,11 +188,20 @@ Version: 1.0
 .archive {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   /* Register general rules for the category - SPOT på midten */
 }
+.archive h2 {
+  font-size: 17px;
+  margin: 24px 0 12px 0;
+  padding: 0;
+  text-align: left;
+}
+.archive h2 p {
+  font-size: 17px;
+}
 .archive p {
-  margin: 24px 0;
+  margin: 0;
 }
 .archive .video-projects {
   width: 100%;
@@ -267,7 +276,7 @@ Version: 1.0
 }
 .archive .category-pa-midten {
   background-color: #121416;
-  margin: 0 0 25px 0;
+  margin: 24px 0 24px 0;
   border-radius: 5px;
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
   position: relative;
@@ -472,6 +481,7 @@ footer .footer-spot h4 {
 }
 footer .footer-spot p {
   font-size: 12px;
+  text-align: center;
 }
 footer .footer-spot aside ul li {
   margin: 12px 0 0 10px !important;
@@ -498,6 +508,7 @@ body {
 
 h1 {
   font-size: 25px;
+  margin-bottom: 24px;
   text-transform: uppercase;
 }
 
@@ -526,8 +537,8 @@ h5 {
 }
 
 p {
-  font-size: 16px;
-  text-align: center;
+  font-size: 12px;
+  text-align: left;
   margin-bottom: 14px;
 }
 
